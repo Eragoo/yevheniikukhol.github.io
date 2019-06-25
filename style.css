@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Trixie;
+    src: url(9209.otf);
+   }
+
+
+body{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns:auto;
+	grid-template-areas:
+	 "header header header"
+	 ". score ."
+	 ". canvas ."
+	 "footer footer footer";
+	 grid-row-gap: 0.5vh;
+	 padding: 0;
+	 margin: 0;
+	 text-align: center;
+	 align-content: center;
+	 font-family: Trixie;
+	 font-size: 4vh;
+	 justify-items :center;
+
+}
+
+#header{
+	grid-area: header;
+	/*border: 1px solid red;*/
+}
+
+#canvas{
+	grid-area: canvas;
+	/*border: 1px solid green;*/
+}
+
+#footer{
+	grid-area: footer;
+	/*border: 1px solid blue;*/
+}
+
+#score{
+	grid-area: score;
+	/*border:1px solid yellow;*/
+}
+
